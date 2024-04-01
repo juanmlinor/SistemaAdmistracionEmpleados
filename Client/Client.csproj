@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\OtherPages\OvertimePages\**" />
+    <Content Remove="Pages\OtherPages\OvertimePages\**" />
+    <EmbeddedResource Remove="Pages\OtherPages\OvertimePages\**" />
+    <None Remove="Pages\OtherPages\OvertimePages\**" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+		<PackageReference Include="Syncfusion.Blazor.Buttons" Version="24.1.45" />
+		<PackageReference Include="Syncfusion.Blazor.Grid" Version="23.1.36" />
+		<PackageReference Include="Syncfusion.Blazor.Popups" Version="24.1.45" />
+		<PackageReference Include="Syncfusion.Blazor.Themes" Version="24.1.45" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
+		<ProjectReference Include="..\ClientLibrary\ClientLibrary.csproj" />
+	</ItemGroup>
+</Project>
